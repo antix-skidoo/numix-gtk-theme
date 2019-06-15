@@ -1,0 +1,70 @@
+numix-gtk-theme (2.6.7-5~ski) unstable; urgency=medium
+
+  * remove the ASININE, politcally-motivated, "Breaks" declaration
+    imposed by Jeremy Bicha of the DebHat Team
+    ref: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=883411
+    ref: "numix-gtk-theme: Undocumented and very likely also broken Breaks
+       against murrine-themes since 2.6.7-2"
+       https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=891493
+       open since: Mon, 26 Feb 2018
+    additional refs: bug tickets #623783, #838994, #827134
+
+ -- skidoo <email@redact.ed>  Fri, 14 Jun 2019 01:11:11 -0100
+
+numix-gtk-theme (2.6.7-4) unstable; urgency=medium
+
+  * Use sed to set Adwaita as default icon theme on Ubuntu
+    instead of using a vendor-specific patch series (Closes: #915917)
+  * Bump Standards-Version to 4.3.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 23 Dec 2018 08:41:18 -0500
+
+numix-gtk-theme (2.6.7-3) unstable; urgency=medium
+
+  * Don't use Breaks: murrine-themes on Ubuntu where gtk2-engines-murrine
+    does not have a useless and wrong dependency on murrine-themes.
+    See bugs 623783 and 838994 for previous attempts to fix this issue.
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 26 Feb 2018 17:18:33 -0500
+
+numix-gtk-theme (2.6.7-2) unstable; urgency=medium
+
+  * Change Maintainer to Desktop Themes Team, but keep old Uploaders
+  * Import to https://salsa.debian.org/ with full upstream source
+  * Add debian/gbp.conf
+  * Point Homepage to GitHub repo
+  * Bump debhelper compat to 11
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 15 Feb 2018 19:28:24 -0500
+
+numix-gtk-theme (2.6.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.1.1
+  * Bump debhelper compat to 10
+  * Depend on numix-icon-theme on Debian
+  * Apply 1002-Set-Adwaita-as-default-icon-theme.patch on Ubuntu only
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 25 Nov 2017 14:04:41 -0500
+
+numix-gtk-theme (2.6.6-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Jan 2017 08:37:47 +0000
+
+numix-gtk-theme (2.6.4-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/patches:
+    + Drop 0001-Fix-Xfce-shadow.patch, applied in new version
+    + Refresh 1002-Set-Adwaita-as-default-icon-theme.patch
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 21:35:11 +0200
+
+numix-gtk-theme (2.6.1-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Initial release (Closes: #827792) (LP: #1593038)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 30 Jul 2016 21:26:54 +0000
